@@ -29,16 +29,26 @@ int main()
     printf("\nTotal Marks = %.0f", total);
     printf("\nPercentage = %.2f", percentage);
 
-    if (percentage >= 90)
-        printf("\nGrade: A");
-    else if (percentage >= 70)
-        printf("\nGrade: B");
-    else if (percentage >= 50)
-        printf("\nGrade: C");
-    else if (percentage >= 33)
-        printf("\nGrade: D");
-    else
+    if (Maths<=33 || English<=33 || Sci<=33 || Hindi<=33 || Gujarati<=33)
+        {
         printf("\nResult: Fail");
-
+        }		
+	else if (percentage >= 90)
+	    {
+        printf("\nGrade: A");
+        }
+	else if (percentage >= 70)
+	    {
+        printf("\nGrade: B");
+        }
+    else if (percentage >= 50)
+	    {
+        printf("\nGrade: C");
+        }
+	else if (percentage >= 40)
+	    {
+        printf("\nGrade: D");
+        }	    
+    
     getch();
 }
