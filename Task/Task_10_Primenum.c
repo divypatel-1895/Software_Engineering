@@ -2,16 +2,16 @@
 #include<conio.h>
 
 int main() {
-    int n, i, j, prime;
+    int r, i, s, prime;
 
     printf("Enter the Num : ");
-    scanf("%d", &n);
+    scanf("%d", &r);
 
-    for (i = 2; i <= n; i++) {
+    for (i = 2; i <= r; i++) {
         prime = 1;
 
-        for (j = 2; j <= i / 2; j++) {
-            if (i % j == 0) {
+        for (s = 2; s <= i / 2; s++) {
+            if (i % s == 0) {
                 prime = 0;
                 break;
             }
