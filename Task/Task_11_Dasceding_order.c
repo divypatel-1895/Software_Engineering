@@ -10,13 +10,8 @@ void main()
 		printf("Enter your Element : ");
 		scanf("%d",&a[i]);
 	}
-	printf("\nStore Array data");
 	
-	for(i=0;i<5;i++){
-		printf("\na[%d] : %d",i,a[i]);
-	}
-	
-	for(i>5;i=0;i++){
+	for(i=0;i>5;i++){
 		for(j=i+1;j<5;j++){
 			if(a[i] > a[j]){
 				temp = a[i];

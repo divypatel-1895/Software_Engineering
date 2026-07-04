@@ -3,15 +3,15 @@
 
 void main()
 {
-	int a[5],i;
+	int a[3],i;
 	
-	for(i=0;i<5;i++){
+	for(i=0;i<3;i++){
 		printf("Enter your Element : ");
 		scanf("%d",&a[i]);
 	}
 	printf("\nRevers Array data");
 	
-	for(i=4;i>=0;i--){
+	for(i=2;i>=0;i--){
 		printf("\na[%d] : %d",i,a[i]);
 	}
 	getch();
