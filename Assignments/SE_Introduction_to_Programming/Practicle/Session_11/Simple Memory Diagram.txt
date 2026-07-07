@@ -1,0 +1,19 @@
+      Memory
++------------------+
+| likes = 500      |
+| Address: 1000    |
++------------------+
+         ▲
+         │
+         │
++------------------+
+| ptrLikes = 1000  |
+| Address: 2000    |
++------------------+
+
+Explanation:
+likes      → Variable storing value 500
+Address    → 1000
+ptrLikes   → Pointer variable
+ptrLikes stores the address (1000) of likes
+*ptrLikes gives the value 500
