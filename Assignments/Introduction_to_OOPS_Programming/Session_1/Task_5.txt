@@ -1,0 +1,6 @@
+5. Comparison between Procedural C and OOP TaskList
+
+Procedural C Version	                                OOP TaskList Version
+Uses separate arrays to store data.	                Stores data inside objects.
+Functions are separate from the data they operate on.	Data and methods are combined in classes.
+Difficult to manage and extend for large programs.	Easy to maintain, reuse, and extend using classes and objects.
