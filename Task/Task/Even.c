@@ -8,7 +8,9 @@ int main() {
     scanf("%d", &num);
 
     if (num % 2 == 0) {
-        printf("%d is an Even number", num);
+        printf("%d is an Even Number", num);
+    } else {
+        printf("%d Is Not Even Number", num);
     }
 
     return 0;

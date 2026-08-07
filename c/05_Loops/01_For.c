@@ -7,13 +7,13 @@ int main()
 	
 	int i;
 	
-//	for(i=1;i<=10;i++){
-//		printf("%d\n",i);
-//	}
+	for(i=1;i<=10;i++){
+		printf("%d\n",i);
+	}
 	
-//	for(i=10;i>=1;i--){
-//		printf("%d\n",i); 
-//	}
+	for(i=10;i>=1;i--){
+		printf("%d\n",i); 
+	}
 
 //	for(i=1;i<=10;i++){
 //		if(i<=5){
@@ -27,13 +27,12 @@ int main()
 //		}
 //	}
 
-	for(i=1;i<=10;i++){
-		if(!(i>=5 && i<=7)){
-			printf("%d\n",i);
-		}
+//	for(i=1;i<=10;i++){
+//		if(!(i>=5 && i<=7)){
+//			printf("%d\n",i);
+//		}
 		
-	}
-	
-		
+//	}
+			
 	getch();
 }
