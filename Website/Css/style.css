@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* header */
+
+#header {}
+
+.nav {
+    background-color: lightcoral;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav .logo {
+    width: 40px;
+    margin: 0 500px;
+    padding: 5px;
+    justify-items: center;
+}
+
+.list .nav-li {
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+.list .nav-li .nav-a {
+    font-size: 25px;
+    color: #ffffff;
+    font-family: "Lato";
+    text-decoration: none;
+}
+
+.icons .serach {
+    font-size: 25px;
+}
+
+.header-content {}
+
+.header-content .row {
+    height: 490px;
+    background-color: lightcoral;
+
+}
+
+.header-content .row .col {
+    font-size: 25px;
+    text-align: center;
+}
+
+.header-text .header-h1 {
+    font-size: 200px;
+    padding: 50px;
+    color: #ffffff;
+    font-family: "Grand Hotel";
+}
+
+.header-text .header-p {
+    color: #ffffff;
+    margin: 0 auto;
+    font-family: "Open Sans";
+    width: 80%;
+    text-align: center;
+}
+
+.header-text .header-btn {
+    font-size: 20px;
+    border-color: #e8565e;
+    border-radius: 18px;
+    margin: 0 auto;
+    padding: 10px;
+    text-transform: uppercase;
+    color: #e8565e;
+    font-family: "Lato";
+}

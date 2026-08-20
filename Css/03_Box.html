@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fall Ahead - New Arrivals</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #111;
+            font-family: Arial, Helvetica, sans-serif;
+            overflow: hidden;
+        }
+        /* Main Image Section */
+        .hero {
+            position: relative;
+            width: 90%;
+            max-width: 1100px;
+            height: 75vh;
+            min-height: 450px;
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.45),
+                    rgba(0, 0, 0, 0.45)),
+                url("store-background.png");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            animation: pageLoad 1.2s ease;
+        }
+        /* Dark overlay */
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(circle,
+                    transparent 20%,
+                    rgba(0, 0, 0, 0.35));
+        }
+
+        /* Moving light effect */
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 30%;
+            height: 200%;
+            background: linear-gradient(90deg,
+                    transparent,
+                    rgba(255, 255, 255, 0.15),
+                    transparent);
+            transform: rotate(20deg);
+            animation: lightMove 5s infinite;
+        }
+
+        /* White Border */
+        .frame {
+            position: relative;
+            z-index: 2;
+            width: 82%;
+            height: 62%;
+            border: 3px solid white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation: frameAnimation 1.5s ease;
+        }
+        /* Main Heading */
+        .title {
+            color: white;
+            font-size: clamp(25px, 4vw, 50px);
+            font-weight: 300;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            animation: titleAnimation 1.2s ease;
+        }
+        /* Red F */
+        .red-letter {
+            color: #e3262e;
+            font-weight: bold;
+            animation: redPulse 2s infinite;
+        }
+        /* Subtitle */
+        .subtitle {
+            color: white;
+            margin-top: 20px;
+            font-size: clamp(14px, 2vw, 22px);
+            font-weight: 300;
+            letter-spacing: 10px;
+            animation: subtitleAnimation 1.5s ease;
+        }
+        /* Button */
+        .button {
+            position: absolute;
+            bottom: 30px;
+            z-index: 5;
+            padding: 12px 25px;
+            background: rgba(0, 0, 0, 0.35);
+            border: 1px solid white;
+            color: white;
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            animation: buttonAnimation 2s ease;
+        }
+        .button:hover {
+            background: white;
+            color: black;
+            letter-spacing: 5px;
+            transform: translateY(-4px);
+        }
+        /* Corner decorations */
+        .corner {
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            border-color: white;
+            border-style: solid;
+            z-index: 4;
+            opacity: 0.8;
+        }
+        .top-left {
+            top: 20px;
+            left: 20px;
+            border-width: 2px 0 0 2px;
+        }
+        .top-right {
+            top: 20px;
+            right: 20px;
+            border-width: 2px 2px 0 0;
+        }
+        .bottom-left {
+            bottom: 20px;
+            left: 20px;
+            border-width: 0 0 2px 2px;
+        }
+        .bottom-right {
+            bottom: 20px;
+            right: 20px;
+
+            border-width: 0 2px 2px 0;
+        }
+        /* =========================
+           ANIMATIONS
+        ========================= */
+
+        @keyframes pageLoad {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        @keyframes frameAnimation {
+            from {
+                opacity: 0;
+                transform: scale(0.85);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        @keyframes titleAnimation {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+                letter-spacing: 18px;
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+                letter-spacing: 8px;
+            }
+        }
+        @keyframes subtitleAnimation {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes buttonAnimation {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes redPulse {
+           0% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.5;
+                transform: scale(1.1);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        @keyframes lightMove {
+            0% {
+                left: -50%;
+                opacity: 0;
+            }
+            30% {
+                opacity: 1;
+            }
+            70% {
+                opacity: 1;
+            }
+            100% {
+                left: 130%;
+                opacity: 0;
+            }
+        }
+        /* =========================
+           MOBILE RESPONSIVE
+        ========================= */
+
+        @media (max-width: 600px) {
+            .hero {
+                width: 100%;
+                height: 100vh;
+            }
+            .frame {
+                width: 88%;
+                height: 55%;
+            }
+            .title {
+                letter-spacing: 4px;
+            }
+            .subtitle {
+                letter-spacing: 5px;
+            }
+            .corner {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="hero">
+
+        <!-- Corner Designs -->
+        <div class="corner top-left"></div>
+        <div class="corner top-right"></div>
+        <div class="corner bottom-left"></div>
+        <div class="corner bottom-right"></div>
+
+        <!-- Main Content -->
+        <div class="frame">
+
+            <h1 class="title">
+                <span class="red-letter">F</span>ALL AHEAD
+            </h1>
+            <p class="subtitle">
+                New Arrivals
+            </p>
+        </div>
+
+        <!-- Button -->
+        <button class="button" onclick="exploreCollection()">
+            Explore Collection
+        </button>
+    </div>
+    <script>
+        function exploreCollection() {
+            const button = document.querySelector(".button");
+            button.innerHTML = "Collection Opened";
+            button.style.background = "white";
+            button.style.color = "black";
+            setTimeout(function () {
+                button.innerHTML = "Explore Collection";
+                button.style.background = "rgba(0,0,0,0.35)";
+                button.style.color = "white";
+            }, 2000);
+        }
+    </script>
+</body>
+
+</html>
