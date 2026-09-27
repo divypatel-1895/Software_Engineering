@@ -1,10 +1,27 @@
+/*
+
+	multi line 
+	asdfsa
+	sad
+	sad
+*/
+
+
 #include<stdio.h>
 #include<conio.h>
 
- void main()
- {
+//bulit inbuilt function
+void main()
+{
+
+//	printf("---- Student List ----");
+//	printf("\n1.karan");
+//	printf("\n2.mohit");
+//	printf("\n3.krisha");
+
+
+	printf("----Student List ---- \n1.shubham \n2.karan \n3.mohit");
 	
-	printf("--- Student List --- \n1.Divy \n2.Rajveer \n3.Roshan");
-	
+	// key enter 	
 	getch();
 }

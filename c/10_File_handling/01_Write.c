@@ -7,16 +7,16 @@ int main()
 	
 	file = fopen("demo.txt","w");
 	
+//	null value chcek
 	if(file ==NULL){
 		printf("error null data..");
 		return 1;
 	}
 	
-	fprintf(file,"Hello Divy Patel is here");
+	fprintf(file,"hello this demo text file");
 	fclose(file);
 
 	printf("File data printed successfully...");
 	
 	return 0;
 }
-

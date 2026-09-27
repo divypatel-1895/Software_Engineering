@@ -1,5 +1,2 @@
-Hello Divy Patel is here
-this is append mode data new line
-this is append mode data new line
-this is append mode data new line
+hello this demo text file
 this is append mode data new line

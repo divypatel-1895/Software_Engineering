@@ -2,29 +2,24 @@
 #include<conio.h>
 
 struct student{
-	int num;
-	int runs;
-	int wickets;
+	int rollno;
+	float marks;
 	char name[20];
 };
 
-void main()
+int main()
 {
 	struct student s;
-	printf("Enter Player Num : ");
-	scanf("%d",&s.num);
-	printf("Enter Player Name : ");
+	printf("Enter your rollno : ");
+	scanf("%d",&s.rollno);
+	printf("Enter your Name : ");
 	scanf("%s",&s.name);
-	printf("Enter Player Runs : ");
-	scanf("%d",&s.runs);
-	printf("Enter Player Wickets : ");
-	scanf("%d",&s.wickets);
+	printf("Enter your marks : ");
+	scanf("%f",&s.marks);
 	
-	printf("\n----Player details----");
-	printf("\nNum : %d",s.num);
-	printf("\nName : %s",s.name);
-	printf("\nRuns : %d",s.runs);
-	printf("\nWickets : %d",s.wickets);
-	
-	getch();
+	printf("\n----student details----");
+	printf("\nroll no : %d",s.rollno);
+	printf("\nname : %s",s.name);
+	printf("\nMarks : %.2f",s.marks);
+	return 0;
 }

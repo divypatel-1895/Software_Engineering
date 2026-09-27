@@ -6,6 +6,7 @@ int main()
 	int a,b;
 	
 	cout<<"enter your A : ";
+//	scanf("%d",&a);
 	cin>>a;
 	
 	cout<<"Enter your B : ";
@@ -14,7 +15,6 @@ int main()
 	cout<<"a : "<<a<<endl;
 	cout<<"b : "<<b<<endl;
 	cout<<"sum : "<<a+b;
-	cout<<"\nsub : "<<a-b;
 	return 0;
 	
 }

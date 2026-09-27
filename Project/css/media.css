@@ -1,0 +1,81 @@
+@media only screen and (max-width:1160px) {}
+
+@media only screen and (max-width:992px) {
+    .header-text .header-p {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .list {
+        display: none;
+    }
+
+    .icons .serach {
+        display: none;
+    }
+
+    .icons .bar {
+        display: block;
+    }
+
+    .header-content .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .header-content .row .col {
+        width: 100%;
+    }
+
+    .hedaer-img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #cart .row {
+        display: block;
+    }
+
+    #cart .row .col {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .card .card-img {
+        height: auto;
+    }
+
+    #meal .row {
+        display: block;
+    }
+
+    #meal .row .col {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .meal-img {
+        width: 100%;
+    }
+
+    #foot .row {
+        display: block;
+    }
+
+    #foot .row .col-3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #foot .row .col-7 {
+        width: 100%;
+        text-align: center;
+
+    }
+}
+    @media only screen and (max-width:576px) {
+        #cart .row .col {
+            width: 100%;
+        }
+    }

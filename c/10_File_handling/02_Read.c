@@ -8,12 +8,13 @@ int main()
 	
 	file = fopen("test.txt","r");
 	
-
+//	null value chcek
 	if(file ==NULL){
 		printf("error null data..");
 		return 1;
 	}
 	
+//	read function
 	fgets(str,100,file);
 	
 	printf("%s",str);

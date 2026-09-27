@@ -3,8 +3,10 @@ using namespace std;
 
 int main()
 {
-	std::cout <<"Hello c file data";
-	cout<<"\nHello this data";
+	printf("Hello first c++ program");
+	std::cout <<"\nHello c file data";
+	
+	cout<<"\nahello this data";
 	
 	return 0;
-} 
+}

@@ -1,11 +1,13 @@
+// stadrard input output header file
 #include<stdio.h>
-#include<conio.h>
+#include<conio.h> //console log input output file
 
 int main(){
 	
-	printf("Hello c program");
+	printf("hello c program");
 	
-	printf("\nDivy Patel");
+//	\n new line print
+	printf("\nShubham jadav");
 	
 	return 0;
 }
